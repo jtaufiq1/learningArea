@@ -1,0 +1,20 @@
+
+1. Malware [viruses, worms, trojans, rootkits, ransomware]
+
+2. Phishing attacks [Advance phishing]
+
+3. Password attacks [Brute forcing, Dictionary attacks and keylogger]
+
+4. Man-In-The-Middle (MITM)
+
+5. Drive by downloads
+
+6. Rogue software
+
+7. Malvertisement
+
+8. Cryptojacking
+
+9. IoT attacks
+
+10. DDOS Attack

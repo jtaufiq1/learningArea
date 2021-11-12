@@ -1,0 +1,2 @@
+--[ - HACKING AS A RESEARCH
+Hacking is a research. Examining something in order to get deep understanding of the internal State, how it works and modify it to suits your need. That is hacking.

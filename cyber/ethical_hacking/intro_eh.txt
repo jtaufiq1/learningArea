@@ -1,0 +1,44 @@
+-[INTRODUCTION TO ETHICAL HACKING]-
+* Ethical Hacking Concepts
+  + Ethical Hacking
+  - A Structured and Organized security assessment, a crucial component of
+    Risk Assessment for Security Auditing or Penetration Test.
+  - Use of hacking tools, tricks and techniques to identify vulnerability and
+    ensure system security by simulating the techniques used by attackers to
+    verify existence of exploitable vulnerabilities in a system's security.
+  - It is done with the permission of concerned authorities.
+  
+  + Why Ethical Hacking is necessary
+  - To uncover vulnerabilities
+  - To enhance security awareness
+  - To Strengthen security posture of an organization or information system
+  - To prevent hackers from gaining access to information systems
+    and Security breaches.
+  - And to safeguard customer data.
+
+  + Scope and Limitations of Ethical Hacking
+  - The crucial compoment in:
+  - Risk Assessment
+  - Auditing
+  - Counter fraud
+  - Information System Security Best Practices
+  - defines the coverage of needed to identify risk
+  - Highlight remedial actions and resolves vulnerabilities.
+
+  - Unless organization knows what they want from the risk assessment,
+  - Less experience may be gained from hiring external pentester
+  - Ethical hackers can only help organizations to understand their security
+    posture. It is the duty of the organization to place the right safeguard
+    on the network.
+
+  + Skills of an Ethical Hacker
+  |- Technical Skills
+   - In depth knowledge of Operating Systems (Linux/Unix, Windows, MacOS)
+   - Networking concepts, technologies and related hardware/software
+   - Computer expert and Knowledge about security related issues
+   - "High Technical" knowledge for launching sophisticated attacks.
+  
+  |- Non-Technical Skills
+   - Learnability and adaption to new technologies
+   - Strong work ethics and problem solving and communication skills
+   - awareness of standards and laws

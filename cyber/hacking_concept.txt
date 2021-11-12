@@ -1,0 +1,70 @@
+--[ Hacking Concepts
+* Hacking
+- Exploiting system vulnerabilities and bypassing security controls.
+- Gaining unauthorized access to an IS or resources on an information system.
+- Involves modification of systems or application features to attain a goal
+- Not originally by definition of the system or application.
+- Hacking can be used for good or bad purpose
+- The effect of unethical hacking can lead to bad consequencies to a system or an organization
+
+Motives Behind hacking are diverse, some include;
+- Theft, distrupt services
+- gain more knowledge, recognition
+- curiosity and many others
+
+* Hacker
+- Creative individual with excellent skills in computer
+- creates and explores software and hardware and even with the ability to
+- discover vulnerabilities in a system.
+- Some hack as a hobby whiles others hack for malicious intentions.
+- Hacking can be used for good or malicious activities.
+ 
+* Hacker Classes
+ - Black Hat
+ - White Hat
+ - Grey Hat
+ - Script Kiddies
+ - Suicide Hackers
+ - Cyber Terrorists
+ - Hacktivists
+ - State-Sponsored Hackers
+
+--[ Hacking Phases
+
+*  Reconnaissance
+Preparatory stage when an attacker gathers info about the target.
+
+Range may include target org-clients, network, systems etc.
+
+There are 2 types of Recon: Passive Recon & Active Recon
+- Passive recon
+No direct interaction with the target.
+- Active recon
+Involves directly interaction with the target
+
+* Scanning (Pre-Atttack Phase)
+Active probing of target before attacking. Scanning the network for specific information.
+
+Port Scanner
+Network mappers, Port scanner, ping tools, vulnerability scanners.
+Information extracted from this stage is used to launch attack.
+
+* Gaining Access
+Obtaining access to the target network, OS or application
+
+Access can be OS, Application or Network Level and can escalate privileges to obtain complete control.
+Password cracking, DDoS, Buffer Overflow, Session Hijacking are some the ways of taken control of target system.
+
+* Maintaining Access
+Retaining ownership of compromised system. Securing exclusive access with Backdoors, rootkits and trojans.
+Allows download, manipulation of data/application/configuration of the system.
+And a launch point for further attacks.
+
+* Clearing Tracks
+Activities carried out by an attacker on compromised system to;
+- Hide malicious acts
+- Maintain access
+- Avoid detection
+- Deleting/overriding evidence to avoid suspicions
+
+Attackers/Hackers always cover their tracks.

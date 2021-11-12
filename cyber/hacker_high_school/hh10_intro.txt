@@ -1,0 +1,318 @@
+                        BEING A HACKER
+                      ------------------
+--[ For the Love of Hacking
+
+Hackers are motivated, resourceful and creative; they get deeply into
+how things work to the point that they know how to take control of them
+and change them into something else.
+
+They re-think big ideas because they can really get into the bottom of 
+how things function.
+
+They aren't afraid of making the same mistakes just out of curiosity,
+to see that if that mistake has the same results.
+
+Hackers don't see failure as a mistake or a waste of time. Failure means
+something new is to be learned.
+
+Hackers enjoy challenging themselves to tinker with everything they have.
+[Resilience]
+
+Quote:
+------
+Don't think you can just be a great hacker only by doing great hacks.
+With humiliy can you be great.
+
+
+--[ Hacking as a Research
+
+Hacking is a research. Although it doesn't follow formal hypothesis. It
+involves deeply examine something, make adjustment and pushing it beyond
+its normal operation.
+
+Deep knowledge gives you great power. Cool things can be done with hacking
+skills. Any knowledge that can help you to a point that you can take control
+of what is in your hand. That is hacking.
+
+Quote:
+------
+Hack everything but harm none.
+
+
+--[ How to Hack
+
+Learning how to hack involve developing the skills, feeling and intuition
+by practising. And then keep practising.
+
+I am going to use OSSTMM as a guide to learn hacking in this documents.
+
+
+--[ Ways to get what you want
+
+- Take it yourself
+- Have someone take it for you
+
+All takens requires *INTERACTIONS* between the person and the thing.
+
+Some of this interactions are between people, things or systems that 
+are familiar with each other. This interaction is called *TRUST*.
+
+But when the interaction is between unknown people, things or systems, it is
+called *ACCESS*.
+
+You can use access to take what you want OR you can trick someone who has
+trust with the target to take it for you.
+
+Hence *SECURITY* means protecting something from both those it doesn't know and
+those it knows and trusts.
+Therefore *SECURITY means protecting an *assert from those who have *access to 
+it and those it knows and *trusts.
+
+# Exercise
+
+1. What kind of interaction is using search engine?
+** using search engine to search for information is an access. 
+   No one is given trust before accessing the information.
+   
+2. Using access and trust to take a locked bicycle packed to a bike rack.
+** You can interact with a locked bicycle by breaking the lock from
+   the bike rack to gain access. No trust is gained from the entity.
+** The owner of the bicycle who is familiar with the bicycle and with the
+   lock key can unlock the bicycle from the bike rack without breaking
+   the lock. Trust is gained from the the entity.
+** The key of the locked bicycle can be obtain from the owner of the bicycle
+   to unlock it. Access is used to unlock it.
+
+3. Using access and trust to login into another person's web-mail account
+** Login into a web-mail account requires email and password from
+   a familiar entity (account owner).
+   Account owner enters the username/email and password in the respective
+   field. Trust from a familiar entity is used to login.
+** An entity brute-force someone's mail account to gain access to the 
+   account.
+   An entity enters possible email&password combinations to gain access to 
+   the web-mail account.
+   An entity tricks the web-mail account owner to get username&password of
+   the web-mail account to login into the account.
+   ACCESS is used to login to the web-mail account.
+   
+
+--[ Feed Your Head: Espionage
+
+- Espionage: hacking against foreign government to commit criminal acts to get
+  an edge in political/military information. Acts includes: 
+  * Breaking and entering
+  * Trespassing
+  * Theft
+  * Destruction
+
+- Economic Espionage: A foreign business hacking another business in a
+  different country to get an edge in business.
+
+- DoXing: Hacking used to get private and personal information on individual
+  people to embarass them publicly.
+
+- OSInt: Open Source Intelligence or Document Grinding. Digging out public 
+  information to target a person/company for an attack.
+
+- Network Surveying: Using Hacking to understand a target's(company) network,
+  systems, applications and devices without actually intruding into the
+  systems.
+
+- Competitive Intelligence: Hacking deeply to understand a competitor without
+  breaking any law.
+
+--[ Hacking to Take Over Your World
+
+Hacking is all about taking control of something or changing it. Having freedom
+to make something you own do what you want. And then keep others from changing
+something you own.
+
+For many people, Security is about putting a product in a place that 
+theorotically keeps them secure. Security products are meant to reduce *Attack
+Surface. But sometimes, products comes with their own problems or don't work as
+they should. Thus, increasing the attack surface when it should be shrinking it.
+
+-- Attack surface is all the ways, all the interactions that allow something/
+   someone to be attacked.
+-- You hack security to analyze the product to figure out where it fails and
+   how to change it so it works better. Then hacking some more to prevent changing it back to the default.   
+-- Breaking security is one area that hacking is useful for protecting your own
+   privacy.
+
+Another type of interaction known as *VISIBILITY is also very powerful as the
+other two. It is simplified as an opportunity to know if there is something to
+interact with or not.
+
+This interaction bring a whole lot of security techniques like deception,
+illusion and camouflage as well as all-new hacking techniques for avoiding and
+getting around security measures like deception, illusion and camouflage!
+
+Privacy is the opposite of visibility. It is a powerful way to avoid being a
+target.
+To avoid attacks in the first place, Keep a low *EXPOSURE and avoid visibility.
+
+** Basic Interactions
+-- Trust
+-- Access
+-- Visibility and Exposure
+
+--[ The Four Point Process (FPP)
+
+Putting the 3 types of interactions together gives us *POROSITY, the basis of an
+attack surface.
+
+Porosity is simply the pores/holes in any defenses you have in order for the
+necessary interactions to take place as well as unknown and unnecessary
+interactions taken place.
+
+Knowing porosity helps in protecting yourself from attack or help to attack 
+some target but not enough to analyze something to hack it.
+
+The Four Point Process outlines 4 ways the basic interactions are used to
+analyze something as deeply as possible. (Mess with it, watch it and observe
+the outcome)
+
+** The Echo Process
+We grow up discovering things and learning things by interacting with them
+directly. Poking to check the status of something (Dead/Alive) is known as the
+*ECHO PROCESS (send request and receive reply)
+
+It requires throwing different types of *Access* interaction at a target and
+then monitoring its reactions to figure out what ways you can interact with it.
+Thus *Cause-and-Effect* type of verification.
+
+Although it makes for a very fast test, it isn't very accurate. Eg: A target
+that doesn't respond to an echo process is considered secure. Which is the same 
+as not having visibility.
+Not responding to a particular type of interaction does not mean it is secured.
+Avoiding visibility might help you survive some types of attacks but not all.
+
+** The Four Point Process (FPP)
+The FPP has you look at interactions in the following ways:
+
+-- Induction:
+   * Information about target from its environment
+   * How does the target behave in its environment?
+   * Is the target influenced by its environment?
+-- Inquest:
+   * What signals does the target gives off?
+   * A system or process generally leaves a signature of interaction with its
+     environment.
+   * Investigate tracks or indicators of those emanations.
+-- Interaction:
+   * What happens when you poke it? This point calls for echo tests, including
+     expected and unexpected interaction with the target, to trigger responses.
+-- Intervention:
+   * How far will it bend before it breaks?
+   * Meddle with its interactions with other systems to understand the extremes
+     under which it can continue operating.
+   * Intervene with resources the target needs.
+ 
+--[ What to Hack
+
+Setting up ground rules is important before hacking anything.
+The *SCOPE is the word used to describe the possible operating environment,
+which is every interaction that the thing you want hack has.
+Knowing the language and the concept of what you are actually hacking is a MUST.
+
+** Classes and Channels
+The scope is made up of 3 channels that subdivides to 5 channels.
+
+-- Physical Security (PHYSEC):
+ * Human 
+ * Physical
+
+-- Spectrum Security (SPECSEC):
+ * Wireless
+
+-- Communication Security (COMSEC):
+ * Telecommunication
+ * Data Networks
+
+Classes are labels that define an area of study, investigation or operation.
+
+Channels are common terms for the ways you interact with assets.
+
+An *Assert is anything that has value to the owner. It can be physical property
+or intellectual property
+
+Dependencies are things beyond the asset owner's ability to provide.
+
+The goal of *Security is separation between an asserts as well as its 
+dependencies and any threat to them. Thus security is a function of separation.
+
+There are four ways to create this separation:
+- Move the asset to create a barrier between it and the threats.
+- Change the threat to a harmless state.
+- Destroy the threat.
+- Destroy the asset. ![NOT RECOMMENDED]
+
+When we are hacking, we look places where interactions with the target are 
+possible and where they are not. We analyze them with the FPP.
+
+** Porosity
+How pores can be located, classified and determined during the hacking process.
+
+-- Visibility: Ways to find opportunity. If an asset is visible, it can be
+   attacked but if not visible, it can be targeted.
+-- Access: The number of different places where interactions can occure to the
+   outside of the scope.
+-- Trust: When an entity accepts free interactions with another entity within
+   the scope. Trust is both security hole and common replacement for
+   authentication.
+
+--[ Resources
+
+Effective research and critical thinking are the key/vital skills for a hacker.
+Hacking, in reality, is a creative process based more on lifestyle than lesson.
+
+And that is what separates a hacker from a script kiddie.
+
+** Books
+ - Fundamental principles of computing
+ - Basic Security and Privacy concepts.
+ - Writing Skills
+
+** Magazines and Newspapers
+ - useful for providing concise and timely information.
+
+** Search Engines
+ - Search information 
+ - Cached Pages (Internet Archives)
+ - Invisible web
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

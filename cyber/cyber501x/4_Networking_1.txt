@@ -1,0 +1,56 @@
+--[ 4 - NETWORKING 1
+
+# Unit Objectives
+-----------------
+* Describe how information finds it way through the internet
+* Parse IP and MAC addresses
+
+=======================================================================
+# Introduction - Networking
+=======================================================================
+
+=======================================================================
+# MAC and IP Addresses
+=======================================================================
+
+=======================================================================
+# Subnet Masks
+=======================================================================
+
+=======================================================================
+# Local Communications
+=======================================================================
+
+=======================================================================
+# Remote Communication
+=======================================================================
+
+=======================================================================
+# The Routing of Packet
+=======================================================================
+
+=======================================================================
+# MAC and IP addresses used together
+=======================================================================
+
+=======================================================================
+# Binding IP addresses to MAC addresses
+=======================================================================
+
+
+
+*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*
+
+VLAN
+-----
+https://www.cisco.com/en/US/docs/ios/lanswitch/configuration/guide/lsw_rtng_vlan_ovw_ps6350_TSD_Products_Configuration_Guide_Chapter.html#wp1003415
+
+https://www.alliedtelesis.com/documents/vlans-feature-overview-and-configuration-guide
+
+http://www.firewall.cx/networking-topics/vlan-networks/214-vlan-concept.html
+
+STP
+---
+http://www.cisco.com/c/en/us/td/docs/optical/15000r4_5/ethernet/454/guide/ios4145/45swstp.html
+
+http://www.cisco.com/c/en/us/support/docs/lan-switching/spanning-tree-protocol/24062-146.html

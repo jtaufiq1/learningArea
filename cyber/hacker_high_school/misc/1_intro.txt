@@ -1,0 +1,116 @@
+                        Hacking as a Research 
+- Hack everything but harm none.
+- Deep knowledge gives you great power. Knowing how to do something
+  to the point that you can take control of it.
+- Don't think you can just be a great hacker Only by doing great hacks,
+  with humility can you be great.
+  
+HackerHandleList[] = {m1rakuru, m1r2kuru, m1r@kuru, mirakuru, unixWarlord, WarLordWu, unixWu}
+Establish handler
+Join IRC
+
+1. HackerHandle = HackerHandleList[0]
+  - Longing for this for every long time.
+  - UpHackerHandle.setHandle(HackerHandle)
+
+#ForTheLoveOfHacking
+#upM1rakuru #unixWarLordWu #unixWu
+
+                        HowTos
+- arouseTheAppetite
+- devFeelings
+- engagePractices
+- escalatePractices
+- exfiltrateTargets
+
++ Searching information using a search engine is an access because
+   that's the point of interacting with the search engine to find
+   visible information with the search query.
+
++ Given an example with a locked bicycle;
+  - An entity can interact with the locked bicycle in a
+    number of ways because it has visibility and point of interaction.
+  - Interacting and gaining trust grants an entity unrestricted and free access
+    to the bicycle.
+  
++ Using *access and *trust to log into another person's web-mail 
+  account.
+ - Access: using visible pores of the web-mail, interact, test the mail
+    account
+ - Visit login page of the web-mail account.
+ - Feed the point of interaction [email and password] with numerous inputs.
+ - Gain unrestricted access from the mail account with trusted inputs.
+ - Trust: When trust is gained from the mail account, unrestricted 
+    access is granted.
+     
+ - Build trust with the mail owner
+ - Gain the mail account credentials
+ - Access the web-mail account based on the *trust gained from account
+   owner
+   
+                Feed Your Head: Espionage
+Espionage: Hacking against foreign government; commit criminal act, breaking and entering,
+    trespassing, theft and destruction to get the edge in political or military information.
+
+Economic Espionage: Foreign business hacking against another business in a different country.
+
+DoXing: Hacking to get private information of an individual to embarass them publicly.
+
+Document grinding/osInt: Digging out public information of a target for and attack.
+
+Network surveying: Hacking done to understand a company network, system, applications and devices
+    as the target of an attack without actual intruding or trespassing.
+
+Competitive intelligence: Hacking to deeply understand competitor without breaking any laws.
+
+                The Four Point Process (FPP)
+* Types of interactions in Hacking: What happens when you poke a target
+    using *Echo Tests, including expected and unexpected interactions
+    with a target, to trigger response.
+   - Trust and Access
+   - Visibility
+   - Exposure.
+
+* Porosity is the basis of attack surface. It is the pores or "holes"
+   in any defenses that you have to have in order for any necessary
+   interactions to take place as well as unknown or "unnecessary" 
+   interactions taking place. Knowing *porosity is important to
+   protect yourself or attack a target.
+
+* The Echo Process
+   Interacting by poking to determine whether dead or alive. The *Echo
+   Effect requires throwing different type of *Access interactions at
+   a target and then monitoring its reactions to figure out ways you
+   can interact with it; Thus *cause-and-effect type verification. It
+   is the basic and immature form of analysis, although it makes for a
+   very fast test but not very accurate.
+
+* The Four Point Process
++ Induction
+    What can we tell about the target from its environment? How does it
+    behave in that environment? if the target is not influenced by its
+    environment, that's it interesting too.
++ Inquest
+    What signals [Emanations] does the target gives off? Investigate any
+    tracks or indicators of those emanations. A system or process
+    generally leaves a signature of interactions with its environment.
++ Interaction
+    What happens when you poke the target? This point calls for echo
+    tests, including expected and unexpected interactions with the
+    target, to trigger responses [Cause-and-effect].
++ Intervention
+    How far will the target "bend" before it breaks? Intervene with the
+    resources the target needs, like electricity, or meddle with it's
+    interactions with other systems to understand the extremes under
+    which it can continue operating.
+ 
+#* Example: How you would use FPP to know if a clock is working - and
+    if it's working correctly by keeping the right time.
+#+ Answer:
+- Interaction: Observe the the clock hand if it's rotating as it should.
+- Inquest: Does the minute hand rotate after every 60 seconds [Cycle of seconds]
+- Intervention: Adjust the clock settings and observe the time.
+- Induction: What is the current time in the area that the clock is
+    being examined.
+
+                What to Hack

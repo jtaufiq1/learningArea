@@ -1,0 +1,6 @@
+W. Richard Stevens's Advanced Programming In The Unix Environment.
+
+*Kernighan & Pike's The Unix Programming Environment.
+
+*March Rochkind's
+Advanced Unix Programming 
