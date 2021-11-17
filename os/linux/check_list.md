@@ -12,12 +12,14 @@
 * Bash Scripting
 * Docker
 * Linux Security (Securing and Hardening Linux System)
-## Server Settup
+## Server Setup
 * Web Server
 * DNS Server
 * File Server
-## Development Environment
-* C/C++ Dev Environment
+* Database server
+## Development env
+* c/c++ dev Environment
+* Python dev env
 ## Important Tools
 * find
 * at/cron/anacron
@@ -28,6 +30,7 @@
 * sed 
 * awk
 * ssh
+* ufw
 _______________________________________________________________________
 # Check Lists Groupings
 ## Setting Up Environment
