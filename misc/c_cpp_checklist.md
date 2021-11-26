@@ -16,6 +16,11 @@ Guidelines for programming with c/c++
 - Functions
 - I/O
 
+## Modern C++ Features
+- C++ 11 & 14
+- C++ 17
+- C++ 20
+
 ## Programming Style (Paradigm)
 - C-Style programming
 - Object Oriented Programming
