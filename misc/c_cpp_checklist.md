@@ -16,6 +16,8 @@ Guidelines for programming with c/c++
 - Functions
 - I/O
 
+## C++ Standard
+
 ## Modern C++ Features
 - C++ 11 & 14
 - C++ 17
