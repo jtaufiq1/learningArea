@@ -2,18 +2,18 @@
 ``` The power of a systems comes from the relationship among programs than from the programs themselves.```
 [Eric S. Raymond, Unix Programming Environment]
 
-## Fundamentals: www.Linuxjourney.com 
-   [x] History Unix & Linux & GNU Project
-   [x] Shell Navigation
-   [x] Text Manipulation Tools
-   [x] Find Help & Searching Files & Directories
-   [x] File & Disk Management
-   [x] Users and Permissions
-   [x] Process Monitoring & Management
-   [x] Security
-   [x] Networking
-   [x] Bash Scripting
-   [x] Basic System Config/Admin Tools
+## Fundamentals: www.Linuxjourney.com
+[x] History Unix & Linux & GNU Project
+[x] Shell Navigation
+[x] Text Manipulation Tools
+[x] Find Help & Searching Files & Directories
+[x] File & Disk Management
+[x] Users and Permissions
+[x] Process Monitoring & Management
+[x] Security
+[x] Networking
+[x] Bash Scripting
+[x] Basic System Config/Admin Tools
 
 ## Intermediate: www.overthewire.com; www.bash.academy;
     * Practice Fundamentals
