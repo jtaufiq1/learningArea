@@ -31,11 +31,12 @@ Finding informations on commands
 ### Summary
 The shell provides mechanism to navigate the command line. `cd` to change directory, `ls` to list contents of a directory and `pwd` to know the current working directory.
 Read more from the manuals and help infos.
-	```
-	man ls		# man pages for ls
-	help cd 	# Help for cd shell builtin.
-	help pwd 	# help for pwd shell builtin.
-	```
+
+```bash
+	$ man ls		# man pages for ls
+	$ help cd 	# Help for cd shell builtin.
+	$ help pwd 	# help for pwd shell builtin.
+```
 
 ## Files & Directories
 * Create file(s)
