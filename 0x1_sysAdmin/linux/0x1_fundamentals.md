@@ -31,9 +31,11 @@ Finding informations on commands
 ### Summary
 The shell provides mechanism to navigate the command line. `cd` to change directory, `ls` to list contents of a directory and `pwd` to know the current working directory.
 Read more from the manuals and help infos.
-`man ls` - man pages for ls
-`help cd` - Help for cd shell builtin.
-`help pwd` - help for pwd shell builtin.
+	```
+	man ls		# man pages for ls
+	help cd 	# Help for cd shell builtin.
+	help pwd 	# help for pwd shell builtin.
+	```
 
 ## Files & Directories
 * Create file(s)
@@ -46,18 +48,18 @@ Read more from the manuals and help infos.
 ## System Locale & Date and Time
 Display/Configure date and time, System wide Locale settings
 
-- date command
+* date 
 	```bash
 	$ date # prints current date and time to terminal
 	```
 
-- datetimectl command (prints date and time in more details)
+* datetimectl command (prints date and time in more details)
  	```bash
 	$ datetimectl
 	```
 	More information can found in ```man date, man timedatectl```
 
-- System wide locale settings.
+* System wide locale settings.
 	config file **/etc/locale.conf** is read during early boot stage by systemd daemon.
 	All services on the system inherits this config. Service or user config can override the system wide locale config.
 
