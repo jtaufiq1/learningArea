@@ -1,0 +1,35 @@
+# LINUX DISPLAY SERVERS
+A key component in GUI and windowing system. Communicates with clients' over the dispaly server protocol.
+Provide framework for graphical environment to interact with application using mouse and keyboard.
+Responsible for I/O Cordination of its' clients to/from OS and hardware and OS.
+Desktop environments run on top of display server.
+
+Linux display servers include X11, Mir, Wayland
+
+## X11 
+Common display server used in linux that uses X.org display server.
+It receives input events from device drivers and makes them available to one of its' clients.
+And it heavily relies on a compositing window manager to do the compositing.
+
+The display server receives data from its' client, process it and does the compositing.
+
+
+
+
+
+
+
+
+
+
+
+
+
+## MISC
+* Kernel Subsystem: Direct Rending Manager (DRM)
+	- Graphics Execution Manager (GEM)
+	- Kernel-Mode Setting (KMS)
+* Window Manager
+	- Compositor: Compositing Window Manager
+	- Stacking Window Manager
+	- Tiling Window Manager

@@ -1,0 +1,164 @@
+Program: series of instructions for computer to follow
+Computers only understand machine language (series of 0s and 1s)
+Machine language: consists of raw bits and bytes; different from arch to arch: low-level details needed to write instructions for an architecture
+
+Translator: Translates instructions to machine code. Eg: Assembler
+Assembler: Translates assembly instructions into machine-readable code
+Assembly language: arch specific
+
+Compiler: Converts high-level language into machine language.
+High level languages can be convert into many different types of machine language for different architecture
+Programs in high level languages are much more readable and intuitive to write. 
+Follows strict rules about how instructions are worded
+
+## Pseudo-code
+English arranged statements in general structure similar to high-level language
+Useful way for programmer to arrange instructions
+Common universal programming concepts
+
+### C-Like Pseudo-code
+
+* Every instruction ends with a semi-colon
+* Each instruction is on its own line
+* Sets of conditional instructions are grouped between curly braces and indented
+
+## Control Structures
+Changes program's execution from a simple sequencial order to a more complex and more useful flow.
+
+* If-Then-Else structure
+
+If (condition) then
+{
+	Set of instruction to execute if condition is met;
+}
+Else
+{
+	Set of instruction to execute if condition is not met;
+}
+
+select/case statements is similar to if-then-else structure
+
+* While/Until Loops
+Executes instructions more than onces (in a loop)
+Requires condition on when to stop looping else to infinity
+
+While (Condition is True)
+{
+	Statement(s) to execute when condition is met;
+	// Instruction will be repeated till condition becomes false
+}
+
+Until loop is similar to While loop except that the condition is inverted
+Until (Condition is false)
+{
+	Instructions to follow if condition is not met;
+	// Repeat till condition becomes true
+
+}
+
+Until loop can converted to a while loop.
+
+* For Loops
+Loops for a certain number of iterations: A while loop with a counter.
+
+For (counter; condition; increment/decrement)
+{
+	Statement(s) to execute;
+
+}
+
+## Variables
+An object that holds data (temporally).
+Some variables are constant. the data it holds does not change.
+
+In programming languages like C, variables must be declared and given a type before it can be used
+All variables are stored in memory.
+The type of a variable describes the type of information it can hold/store. 
+
+Type of Variables
+* Integer variables
+* Decimal floating-point variables
+* Character variables
+
+Eg in C:
+int number;
+float PI;
+char c;
+
+## Arithmetic Operators
+
+* Addition (+)
+* Subtraction (-)
+* Multiplication (*)
+* Division (/)
+* Modulo reduction (%)
+
+- Increment operator (++): Eg: i = 0; i++; or ++i;
+- Decrement operator (--): Eg: --i; i--;
+
+- Arithmetic and assignment operator can be used to perform operation a variable store it into the variable.
+
+## Comparison Operator
+Conditional statements are based on some comparison operations
+
+* Less than (<) 
+* Greater than (>)
+* Less than or equal to (<=)
+* Greater than or equal to (>=)
+* Equal to (==)
+* Not Equal to (!=)
+
+## Logical Operator
+use to chain chain comparison operations
+* OR (||)
+* AND (&&)
+
+## Functions | Procedures | Sub routines
+Grouping instructions into smaller sub programs.
+Can be used several times to avoid repeation of statements.
+
+Function can take argument(s) and may return a value.
+When a function is called, the statements or instructions found in it are executed
+
+Function prototype
+return_type function_name(optional arguments)
+{
+	Statements;
+
+	return_value;
+}
+
+Eg: Function that returns factorial of a natural number.
+
+int factorial(int x)
+{
+	int i;
+	for(i = 0; i < x; i++)
+	{
+		x *= i;
+	}
+	return x;
+}
+
+// Calling the function with an argument and a variable to store the return value.
+int b = factorial(2);
+
+A function that does not return anything is declared void
+
+void function_name(optional args);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

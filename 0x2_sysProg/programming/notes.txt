@@ -1,0 +1,142 @@
+# The Art of Exploitation
+
+* C Programming fundamentals: Getting the hands dirty
+	use objdump to examine compiled binaries: $ objdump -D binary -M|x86-asm-syntax=(att|intel)
+
+* The GNU Debugger (gdb)
+	$ gdb -q bin:			Start gdb in silent mode (DO NOT DISPLAY LICENSE INFORMATION)
+	help command:			Online help for gdb commands; To fully harness the power of GDB, help must be a friend!
+	break: 					Set a breakpoint
+	run:					run program and stop at breakpoint
+	step:					execute the next instruction; step into any function
+	next:					execute the next instruction
+	info registers: 		prints current registers state
+	print expression:		Print the value of expression
+	nexti N:				Step one or N instruction(s) but proceed through function calls
+	backtrace:				Display the program stack.
+	where:					Backtrace of the stack
+	continue:				continue running after stopping at breakpoint
+	list:					prints the source
+	disassemble main: 		display assembly instruction of main function
+	set disassembly intel: 	Sets disassembly syntax to intel (config .gdbinit to set automatically at startup)
+	quit|q:					Exit gdb
+
+	$ echo "set disass intel" > ~/.gdbinit
+
+	- Examining Memory using the examine (x) command
+	Takes two arguments: the location in memory & how to display it, ie: x/(#)FMT ADDRESS|REGISTER
+	Display format: single letter with an optional count; x/[COUNT]Format[SIZE] ADDRESS|REGISTER.
+	Common display formats:
+		- o: Octal
+		- x: Hexadecimal (z, with zero padding)
+		- u: Unsigned | standard decimal | base 10
+		- t: binary
+		- c: character
+		- f: float
+		- s: String
+		- i: Instruction
+		- a: Address
+	And size letters are:
+		- b: byte (1 byte)
+		- h: halfword (2 byte)
+		- w: word (4 byte)
+		- g: giant (8 byte)
+
+* The x86_64 Architecture Assembly
+	- General purpose Registers (EAX, ECX, EBX and EDX) Holds variable temporally for the CPU
+		EAX - Accumulator register
+		EBX - Base pointer register
+		ECX - Counter register
+		EDX - Data register
+
+	- Pointers & Index Registers (ESP, EBP, ESI, EDI)
+		ESP - Stack Pointer Register
+		EBP - Base Pointer Register
+		ESI - Source Index Register
+		EDI - Destination Index Register
+
+		ESP & EBP points to a memory location. Important for program execution and memory management.
+		ESI & EDI points to source & destination when data needs to be read from or written to.
+
+		EIP Register - Instruction Pointer Register: Points to the current instruction being read by the processor
+
+	- 64-Bit Mode
+			In 64-Bit mode (E)xtended is replaced with (R)egister i.e. the instruction pointer EIP is RIP in 64-bit mode.
+			Has additional general purpose registers: R8 to R15
+
+	- EFLAGS Register - Consists of several bit flags used for comparisons and memory segmentations.
+		IF
+	
+	- Intel Assembly Syntax
+		operation	<destination>, <source>
+			- Destination/Source can either be a value, memory address or register
+			- Operations are intuitive mnemonics such as mov, sub, inc
+		Execution control flow
+			cmp - compare operation is used to compare values
+			jle - jump if less than or equal to; refers to the results of the previous cmp instruction
+
+* Memory Segmentation
+	- A compiled program's memory is divided into 5 segments
+	- Each segment represents a special portion set aside for a certain purpose
+	- The segments are: text|code, data, bss, stack and heap
+	    * Text/Code segment: stores the assembled machine instructions
+	        - the execution of instructions is nonlinear in this segment
+	        - High-level control structures compile into branch, jump and call instructions
+	          in assembly.
+	        - The (R|E)IP is set to the first instruction in this segment.
+	        - The processor follows an execution loop. i.e:
+	            1. Reads the instruction that the *IP is pointing to
+	            2. Adds the byte length of the instruction to *IP
+	            3. Executes the instruction that was read in step 1
+	            4. Goes back to step 1
+	        - Write permission is disabled in this segment (READ-ONLY)
+	        - Allows sharing of code by different copies of the programming running
+	        - Has a fixed size since it is read-only
+	    * Data and bss Segment: stores global and static variables
+	        - The data segment is filled with initialized global and static variables
+	        - The bss segment is filled with uninitialized global and static variables
+	        - Writable but has fixed size
+	    * Heap Segment: A segment of memory a programmer can directly control.
+	        - Blocks of memory can be allocated in this segment for any use
+	        - The size is not fixed;
+	        - it grows or shrinks depending on how much memory is reserved for use
+	        - Reservations are managed by an allocator and deallocator algorithms
+	        - The growth moves downwards towards higher memory addresses
+	   * Stack Segment: Temporal scratch pad for storing local function variables.
+	        - Variable in size; stores local function context during calls.
+	        - The *BP register (Frame Pointer|Local Base (LB) Pointer)
+	            - used to reference local function variables in the current stack frame 
+	        - Stack frame:
+	            - contains parameters to the function and local variables
+	            - The Saved Frame Pointer (SFP) and the return address
+	            - SFP restores *BP to its previous value
+	            - The return address restores *IP to the next instruction after function
+	        - The stack contains many stack frames with first-in-last-out ordering (FILO)
+	        - Putting an item on the stack is known as pushing
+	        - Removing an item from the stack is known as popping
+	        - *SP register is used to keep track of the address of the end of the stack
+	        - It grows upward in visual listing of memory, toward lower memory addresses.
+
+	+--------------------+	Lower memory addresses
+	| Text/Code Segment  |	
+	+--------------------+
+	| Data Segment		 |
+	+--------------------+
+	| bss Segment 		 |
+	+--------------------+
+	| Heap segment 		 |
+	+----	 	|	 ----+
+	|	 		|		 |
+	+----	 	|	 ----+
+	|      Stack Segment |
+	+--------------------+ 	Higher memory addresses
+
+	The heap and the stack are dynamic and both grow in different directions towards each other to minimize wasted space.
+	The heap grows downwards toward higher memory addresses and the stack grows upwards toward lower memory addresses.
+
+* MISC
+- Endianese (x86 CPU Architecture: Byte Order)
+- State referrences
+
+
+

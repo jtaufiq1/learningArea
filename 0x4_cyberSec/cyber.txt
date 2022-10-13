@@ -1,0 +1,132 @@
+# COMPUTER SECURITY || CYBER SECURITY || INFORMATION TECHNOLOGY SECURITY (IT SECURITY)
+
+* A computer is any device with a processor and some memory. Such devices can range from non-networked standalone devices as simple as calculators, to networked mobile computing devices such as smartphones and tablet computers.
+
+IT Security:
+The protection of information systems and networks from intrusion, information disclosure, theft, damage to their hardware,software and electronic data as well as disruption or misdirection of service they provide.
+
+The CIA Triad is a simple way to describe key security goals with more elaborated frameworks proposed in recent times.
+
+The Creeper 1971 first computer worm & Reaper 1972 first computer anti virus to delete the creeper virus
+Morris worm 1988 emerged & distributed via the internet
+
+SSL v1.0 Protocol 1993 by Netscape & Mosaic browser by NCSA
+SSL v1.0 very weak security vulnerabilities, SSL v2.0 released 1995
+
+NSA protect information & information systems, collects foreign intelligence
+
+* Protecting information systems includes:
+- Evaluating software, identifying security flaws and steps to correcting them.
+* Collecting intellegence include:
+- Exploiting security flaws to extract information
+
+## VULNERABILITIES AND ATTACKS
+A weakness in design, implementation, operation & internal control.
+Vulnerabilities discovered are documented in Common Vulnerabilities and Exposure (CVE) database.
+
+Vulnerabilities can be researched, reversed-engineered, or exploited
+Exploitable vulnerability has at least one working exploit using automated tools or customized scripts.
+
+threat to computer security can categorized into one of the following:
+* Direct-Access Attack:
+	An attacker gaining physical access to an information, steal or destroy sensitive inforamtion or even make it vulnerable to further attacks.
+* Backdoor:
+	Secret method to bypass normal authentication or security controls. Can be found in computer systems, cryptosystems or an algorithm. Backdoors can be added by trusted/authorized party for legitimate reasons or by an attacker for malicious reasons.
+* Denial of Service Attack (DoS Attack):
+	Designed to make resource unavailable to intended users. DoS usually comes from a single point (IP address)
+	Distributed Denial of Service (DDoS) from large points (zombie computers/botnets) including IoT devices.
+* Eavesdropping:
+	Secretly listening to private conversation of host or between host on a network.
+* Multi-vector or Polymorphic Attacks:
+	Combined several types of attacks and changes form to avoid cyber security controls as it propagates
+* Privilege Escalation:
+	An attacker with restricted level of access, without authorization is able to elevate the access-level or have unrestricted access.
+* Reverse Engineering:
+	Deconstructing an object to reveal its' internal state, code, architecture or extract knowledge.
+* Side Channel Attack:
+	Any computational system affects its' environment in some form. In this attack, the attacker gathers information left by the system in its' environment or network to guess its' internal state as a results access secured information.
+* Social Engineering:
+	Aims to convince user to disclose secret information, grants physical access by impersonating a trusted individual.
+	Or generally exploits peoples trust and relies on their cognitive biases.
+
+	Phishing: An attempt to gain sensitive information from users directly by deceiving them. As a form of social engineering, it preys on a victims trust. It is typically carried out by email spoofing.
+* Spoofing:
+	Masquerading as a valid entity through falsification of data in other to gain access to unauthorized information.
+	
+	Email Spoofing: forges the source address of an email
+	IP Address Spoofing: Alters the source IP address in a packet to hide identity or impersonate another computing system
+	MAC spoofing: An attacker modifiers the MAC address to their NIC to obscure their identity
+	Biometric spoofing: Producing fake biometric data sample to pose as another user
+* Tampering:
+	Malicious modification or alteration of data.
+* Malicious Software (Malware):
+	Malware installed on a system can give control to an attacker, leak information, corrupt or delete data.
+	Various types of malware such virus, worm, keylogger trojan, rootkit and others exist for such purpose.
+
+## INFORMATION SECURITY CULTURE
+* Pre-Evaluation
+* Strategic Planning
+* Operative Planning
+* Implementation
+* Post Evaluation
+
+## COMPUTER PROTECTION
+* Attacker motivation
+* Impact of breeches
+
+### Countermeasures:
+An action, procedure or technique or even a device that reduces threat, a vulnerability or an attack by eliminating or preventing it or by minimizing the harm it can cause or descovering and reporting for corrective measures.
+
+Common countermeasures include the following:
+* Security by design: Security considered as a main feature of information system
+	- The principle of least privileges
+	- Automated theorem proving
+	- Code reviews and unit testing
+	- Defense in depth
+	- Default secure settings or design to fail secure
+	- Storing audit trails to track system activities
+	- Full disclosure of all vulnerabilities to shorten its' window after discovery
+* Security Architecture
+	Describes how security controls are positioned and how they relate to overall information security architecture
+	These maintains system's quality attributes: Confidentiality, Integrity, Availability, Accountability and Assurance Services
+* Security Measures
+	The process includes threat Detection, Prevention and Response
+* Vulnerability Management
+	It is the cycle of identifying, remediating or mitigating vulnerabilities especially in software/firmware.
+* Hardware Protection Mechanisms
+	Devices such as USB dongles, TPM, SoC etc can provides a layer of protection considered more secure due the physical access required.
+* Secure Operating Systems
+* Secure Coding
+	Creating software to secure by guarding against introduction of vulnerabilities during development (coding) stage.
+* Capabilities and Access Control Lists (ACLs)
+	- ACL: Lists of permissions associated with an object. ACLs specifies which users or processes are allowed to access an object.
+	- RBAC: Role Based Access Control, restricts system access except to authorized users.
+	- Capability Based Security *
+* End User Security Training
+	The end user is considered as the weakest link in the security chain. Security awareness training is very essential in reducing cyber risk and protects against cyber threats. Security-aware user provides an important line of defense against cyber attack.
+* Cyber Hygiene (Digital Hygiene:
+	Establishing simple routines to minimize risks of cyber threats. Good digital hygiene gives another layer of defence to network users
+
+### Incident Response Planning
+An approach to organizing and managing the aftermaths of computer security incident or compromise
+the goal is to prevent a breach or prevent it from escalating
+Contain an incident, limit damage and assist recovery using documented instructions and following best practices.
+
+Key components of Computer incident response planning:
+- Preparation
+- Detection and Analysis
+- Containment, Eradication and Recovery
+- Post Incident Activity
+
+## MODERN WARFARE
+The cyberspace; the next theater for warfare. Using carefully weaponized programs to disrupt or destroy critical infrastructures, military networks, command and control weapons of mass destructions and warships.
+
+## CAREERS
+* Security Analyst
+* Security Engineer
+* Security Architect
+* Security Administrator
+* Chief Information Security Officer (CISO)
+* Chief Security Officer (CSO)
+* Data Protection Officer (DPO)
+* Security Consultant/Specialist/Intelligence

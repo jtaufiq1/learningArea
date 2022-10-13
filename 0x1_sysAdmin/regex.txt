@@ -1,0 +1,74 @@
+--[ REGULAR EXPRESSIONS
+
+A pattern that describes a set of strings
+- Basic Regular Expression (BRE)
+- Extended Regualar Expression (ERE)
+- Perl-Compatible Regular Expression (PCRE) (pcresyntax|pcrepattern)
+
+* Fundamentals 
+- Match single character (letters & digits)
+- Meta-character with special meaning is quoted with a preceeding backslash(\)
+
+'.'		- Matches any single character
+'?'		- Optionally matches the preceeding character at most ones
+'*'		- Matches the preceeding character zero or more times.
+'+'		- Matches the preceeding character one or more times.
+'{N}'	- Match N times
+'{N,}'	- Match N or more times
+'{,M}'	- Match at most M times
+'{N,M}'	- Match at least N times but not more than M times
+'^'		- Match beginning of line
+'$'		- Match the end of line
+
+Empty expression match empty strings
+Two regex maybe concatenated
+Two regex maybe joined with (|) operator; resulting string matches either alternate expression
+Repetition takes precedence over concatenation, which in turns take precedence over alternation.
+A whole expression may be enclosed in parentheses '()' to override the precedence rules to form subexpression
+An unmatched ')' matches itself
+
+* Character Classes and Bracket Expressions 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

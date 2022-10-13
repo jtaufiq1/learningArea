@@ -1,0 +1,194 @@
+# --[ INTRODUCTION - INFORMATION SECURITY (INFOSEC)
+
+InfoSec, as part of information risk management is the practice of protecting information by mitigating information risks.
+
+It involves actions intended to reduce the adverse impact on information. Typically, it involves preventing, unauthorized access to data or unlawful use, modification, inspection, recording or devaluation of information.
+
+Focuses on the balanced protection of Confidentiality, Integrity and Availability of data achieved through structured risk management process through:
+* Identifying information related assets, potential threats, vulnerabilities and impact.
+* Evaluating risks.
+* Decide how to address or treat risks: i.e. to avoid, mitigate, share or accept them
+* Where risk mitigation is required, selecting or designing appropriate security controls and implementing them.
+* Monitoring the activities, making adjustments as necessary to address any issues, changes and improvement opportunities.
+
+Attributes of infoSec are composed in hardware, software and communications.
+Purpose to help identify and apply infosec industry standards for protection and prevention
+Level of protection & prevention: Physical, Personal & Organizational
+
+Implementation of essential procedures or policies to preserve the Confidentiality, Integrity and Availability of information including other properties such as Authentication, Accountability, Non-Repudiation and Reliability and other relevant security goals (Privacy and Auditability).
+
+This ensures that authorized users have access to accurate and complete information when required by developing and implementing security mechanisms of all available types (Information Assurance).
+
+* Information Assurance
+
+* Information Security threats comes in many forms:
+- Software attack (Viruses, Worms, Trojan Horses, ransomwares)
+- Identity theft
+- Intellectual property theft
+- Information/Equipment theft
+- Information extortion and sabotage
+
+* Responses to threats
+As users are the most vulnerable part of an organization, periodical user awareness can help protect organization from threats. Possible response to a security threat or risk are:
+- Reduce/mitigate: Implement safeguards and countermeasures to eliminate vulnerabilities
+- Assign/Transfer: Place the cost of the threat onto another entity or organization i.e. outsourcing
+- Accept: Evaluate if the cost of the countermeasure outweighs the possible cost of loss
+
+## Basic Principles | Key Concepts
+At the heart of InfoSec is the  CIA Triad (Confidential, Integrity and Availability) and other principles such as Authentication, Accountability, Authorization, Non-Repudiation and others.
+
+* Confidentiality: Component of Privacy. Protect data from unauthorized views & access.
+* Integrity: maintaining and assuring the accuracy and completeness of data over its entire lifecycle.
+* Availability: Information must be available for intended users when needed.
+* Non-Repudiation: Implies one party of involved in a transaction can't deny having sent a transaction nor the other party can't deny having received the transaction.
+
+## Risk Management
+
+* Risk: The likelihood that something bad will happen that causes harm/loss to an information asset.
+* Vulnerability: The weakness that could be used to cause harm to an information assert.
+* Threat: Anything (Natural or Man-Made) that has a potential to cause harm
+
+The likelihood that a threat will use a vulnerability to cause harm creates a risk.
+Impact is when a threat use a vulnerability to inflict harm. In infoSec, the impact is a loss of CIA and possibly other losses (income, life, property).
+
+Risk management is an iterative process that involves identifying vulnerabilities and threats to an (asset) information resources and deciding countermeasures to reduce it to an acceptable level based on the value of information resources.
+
+An asset (Information Resource)
+Vulnerabilities & threats
+Countermeasures (Controls)
+
+* Risk Assessment
+
+* Risk management Process
+1. Identification of assets and estimated value
+2. Conduct a threat assessment
+3. Conduct a Vulnerability assessment and probability of being exploited
+4. Calculate the impact each threat would have on an asset
+5. Identify, Select and Implement appropriate controls
+6. Evaluate effectiveness of the control measures
+
+* For any given risk;
+	1. Management can choose to accept the risk based upon the relative low value of the asset, relative low frequency of occurence and the relative low impact on the business.
+	2. Management may choose to mitigate the risk by selecting and implementing appropriate control measures to reduce the risk.
+	3. The risk can be transferred to another entity by outsourcing in some cases.
+	4. Management may choose to deny the risk.
+
+### Security Controls
+Selecting and implementing proper security controls will initially help an organization bring down risk to acceptable levels. Controls can vary in nature but fundamentally they are ways of protecting information and information asset.
+
+* Administrative | Procedural Controls
+	- Consists of approved written policies, procedures, standards and guidelines.
+	- Forms the framework for running an organization managing the people.
+	- Forms the basis for selection and implementation of logical and physical controls
+
+* Logical | Technical Control
+	- Uses software and data to monitor and control access to information and computing systems.
+	- Examples of logical controls include passwords, network & host-based firewalls, access control lists, data encryption
+	- The principle of least privilege is also important logical control
+
+* Physical
+	- Monitor and control the environment and computing facilities, access to and from the facilities.
+	- Separating the network and workplace into functional areas.
+	- Separation of duties i.e. the roles of responsibilities must be separated from one another.
+	- Example, an application programmer should not be the server administrator.
+
+### Defense In-Depth
+[Defense in-Depth](images/def_in_depth.png)
+Information must be protected throughout its lifespan; from the initial creation through to the final disposal of information.
+
+There are many different ways information and information systems can be threatend. Information must be protected while in motion and while at rest.
+Information may pass through many different information processing systems through many different parts of such systems.
+
+To fully protect information during its lifetime, each component of the information processing must have its own protection mechanisms. Layering on and overlapping of these security measures is called defense in depth.
+In this strategy, if one defensive measure fails, other measure will continue to provide protection
+
+The three types of controls (Administrative, Logic & Physical) can used as basis for building defense in-depth.
+
+### Classification
+Recognizing the value of information and defining appropriate procedures and protection requirements is vital in infoSec and risk management.
+
+Because not all information is equal thus, not all information requires the same degree of protection. This requires information to assigned security classification.
+Laws and regulatory requirements are also important considerations when classifying information.
+
+* Steps in classification:
+	1. Identify a member of senior management as the owner of the particular information to be classified.
+	2. Develop classification policy:
+		Describe different classification labels,
+		Define the criteria for information to be assigned a particular label
+		And list the required security controls for each classification.
+
+The type of information security classification labels selected and used depends on the nature of organization.
+
+Employees in an organization as well as business partners must be trained on the classification schema and required security controls and handling procedures for each classification.
+
+The classification of an information asset assigned should be reviewed periodically to ensure the classification is still appropriate. 
+
+### Access Control
+Access to protected information must be restricted to people who are authorized to access the information.
+The computer programs and the computer that process the information must be authorized.
+The more sensitive or valuable an information is, the stronger the control mechanisms need to be.
+
+The foundation on which access control mechanisms are built start with identification and authentication and authorization.
+
+* Identification
+	- An assertion of who someone or what something is. Before an entity is granted access to a protected system, it is necessary to verify the entity making the claim.
+	- Typically the claim for person is in the form of username. By the entering the username, the person is claiming I am who this username belongs to.
+
+* Authentication
+	- The act of verifying a claim of identity. Entering the correct password, the person is providing an evidence that the username belongs to him/her.
+	- Authentication can be done in three (3) different forms:
+		- Something you know such as PIN, a password or an answer to a secret question.
+		- Something you have such as License card, RFID etc.
+		- Something you are such as biometrics; fingerprints, palm prints, eye scans etc.
+	- Strong authentication requires more than one type of authentication information.
+
+* Authorization
+	- Informational resource an authenticated entity is allowed to access or perform actions on it (authorization)
+	- Action(s) include run, view, change or delete
+	- Administrative policies and procedures describes how to access information and (other) computing services
+	- Access controls are configured mechanisms that enforce these policies.
+
+###  Cryptography 
+Infosec uses cryptography to transform usable information to into a form that renders it unusuable to anyone except authorized user.
+Cryptography in infosec is used to protect information from unauthorized access or accidental disclosure while in transit or at rest.
+Other useful application include improved authentication, message digests, digital signatures, non-repudation and encrypted network communications.
+
+Several crytographic protocols exists for different purposes. Such as:
+	- WPA/WPA2 for encrypting wireless communications.
+	- AES & X.1035 for wired communication encryption & authentication and key exchange
+Softwares such GnuPG or PGP can be used to encrypt data file and emails.
+Incorrect implementation of crytographic algorithms can security problems.
+
+## Processes
+In infoSec, due care and due diligence are steps that shows that a business entity has taken responsibility and necessary steps to protect the business, its resources and employees.
+And continual activities that makes sure the protection mechanisms are continually maintained and operational.
+
+* Security Governance
+* Incident Response Plan (IRP)
+	- Group of policies that dictate an organization reaction to a cyber attack. Includes:
+	 	- Preparation
+	 	- Identification
+	 	- Containment
+	 	- Eradication
+	 	- Recovery
+	 	- Lessons learnt
+* Change Management
+	- Formal process for directing and controlling alteration to the information processing environment
+	- Aim is to reduce risks, improve stability and reliability of the processing environment
+
+
+## Laws and Regulations
+
+## Misc
+
+Guidelines for the Security of Information Systems and Networks
+Engineering Principles for Information Technology Security
+The Open Group - OISM3: Information Security Management Standard
+ISO/IEC 27002:2005: Information Security Management
+Information Systems Audit and Control Association (ISACA)
+
+
+
+
+
+
