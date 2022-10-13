@@ -1,45 +1,69 @@
 # C/C++ check list
 Guidelines for programming with c/c++
 
+A general purpose programming language
+
 ## Environment setup
-- Command line (Install Compiler toolchain)
-- CodeLite IDE requires MSYS2 || MingW
+- Command line (Editor, Compiler, Linker & Debugger toolchain)
+- CodeLite IDE requires MSYS2 || MingW (Windows Platform)
+- Visual studio (Windows)
 
-## Fundamentals
-- Basics syntax
-- Variables & Data types
-- Statements & Expressions
-- Operators ()
-- Control Structures
-- Characters and Strings
-- Pointers and Referrences
+## C Programming
+- [x] Basic C syntax
+- [x] Compiling source file
+- [x] Statements & Expressions
+- [x] Variables & Data types
+- [x] Characters and Strings
+- [x] Arrays
+- [x] Operators
+- [x] Control Structures
+- [x] Functions
+- [x] Character Pointers
+- [x] Pointers
+- [x] File I/O
+- [x] Keywords (const|static...)
+- [ ] Struct & Union & Typedef
+- [x] Dynamic Memory Management
+- [x] Memory Segmentation
+- [ ] Function Pointers
+- [ ] Recursion
+- [ ] Variable Arguments
+- [ ] Compilation Process
+- [ ] Header & Source File(s)
+- [ ] Preprocessor Directives
+- [ ] C Standard Library
+- Creating Libraries
+
+## Modern C++ Programming
+- Basic C++ Syntax
+- Strings
 - Functions
-- I/O
-
-## C++ Standard
-
-## Modern C++ Features
-- C++ 11 & 14
-- C++ 17
-- C++ 20
-
-## Programming Style (Paradigm)
-- C-Style programming
+- Pointers & References
+- File I/O
+- C++ 11 & 14, 17, 20 Standards
 - Object Oriented Programming
-- Generic Programming
-- Abstraction
-
-## Coding practices
-- Cryptography
-- Algorithms and Data Structures
-
-## 
 - Standard Template Library
+- Generic Programming
+
+## Compiler & Debugger
+- GNU C Compiler (GCC)
+- Debugging with GDB
+- Debugging with valgrind
+
+## Assembly Language Basics
+
+## Coding Practice & SE
+- Algorithms and Data Structures
+- Network programming
+- Cryptographic Ciphers
 - Software Development with C/C++
 - Secure Coding & Best practices
 
-## Misc
+## DevOps
+- [x] Make & Makefiles
+
+## Miscellania
 - Boost Library
 - SDC Library
-- 
-
+- Qt Framework
+- GUI Programming

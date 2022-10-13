@@ -1,9 +1,19 @@
 # SYSTEMS PROGRAMMING
 
-## Fundamental:
+* Algorithms & Pseudocode
+* Programming Principles
+* Object Oriented Programming Principles
+* DevOps
+* Secure Coding
+* Low Level Programming (Assembly Programming)
 
-## Intermediate:
+## Programming Languages
+* C/CXX Programming
+* Python
+* .NET Platform
 
-## Advanced:
+## Software Development
 
-## Miscellania:
+## DevOps
+
+## Miscellania
