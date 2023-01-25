@@ -1,5 +1,13 @@
 # The Art of Exploitation
 
+[x] C Tutorials
+[x] Compiled binary assembly dump
+[x] Examining Compiled Binary
+[x] GNU Debugger
+[x] X86_64 ARCH Assembly
+[x] Memory Segmentation
+[x] Exploitation
+
 * C Programming fundamentals: Getting the hands dirty
 	use objdump to examine compiled binaries: $ objdump -D binary -M|x86-asm-syntax=(att|intel)
 
@@ -81,10 +89,9 @@
 	- The segments are: text|code, data, bss, stack and heap
 	    * Text/Code segment: stores the assembled machine instructions
 	        - the execution of instructions is nonlinear in this segment
-	        - High-level control structures compile into branch, jump and call instructions
-	          in assembly.
+	        - High-level control structures compile into branch, jump and call instructions in assembly.
 	        - The (R|E)IP is set to the first instruction in this segment.
-	        - The processor follows an execution loop. i.e:
+	        - The processor follows an execution loop i.e.:
 	            1. Reads the instruction that the *IP is pointing to
 	            2. Adds the byte length of the instruction to *IP
 	            3. Executes the instruction that was read in step 1

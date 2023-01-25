@@ -99,6 +99,7 @@ FORMAT STRINGS
 	Minimum field width can be added right after the % sign of the format string
 	Adding a 0 after the % sign pads it with 0s
 
+ESCAPE SEQUENCE
 	- \n: Newline
 	- \t: Tab
 	- \r: Carriage return
@@ -113,9 +114,9 @@ unsigned int date_of_birth = 19111993;
 char TRUE = '1';
 float PI = 22/7;
 
-// Array
-char str_array[] = {'A', 'r', 'r', 'a', 'y', '\0'};		// Null-terminated array
-int numbers[5];											// Declared an array of 5 numbers
+// Arrays
+char char_array[] = {'A', 'r', 'r', 'a', 'y', '\0'};
+int numbers[5];											// Declared an array of 5 integers
 int value = 10;
 
 

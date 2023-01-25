@@ -10,10 +10,11 @@ A running Linux system is made up of many parts put together to serve specific j
 * Application software
 
 * Hardware
+The base of a Linux system. Includes memory, CPUs for computations and other devices such disks Network Interfaces and other peripherals.
 
 * Kernel (Core of a Linux System)
-At the core of every linux system is the kernel. First created by Linus Torvalds as copy of Unix system.
-The kernel controls all the hardware and software	on the system.
+At the core of every Linux system is the kernel. First created by Linus Torvalds as copy of Unix-Like system.
+The kernel manages all the hardwares and acts as an interface between the hardware and a running program.
 And allocating hardware when necessary, executing software when required.
 
 The four primary functions of the kernel are:
@@ -149,7 +150,7 @@ The kernel uses advance C techniques & GNU C compiler features.
 
 Layers of Abstraction in a Linux System.
 
-Hardware -> Kernel -> User Process
+Hardware -> Kernel -> User Processes
 
 ## User Mode
 * Has restricted access to a subset of memory and a safe CPU
@@ -160,7 +161,7 @@ Hardware -> Kernel -> User Process
 * Passes application requests to the hardware
 * Low-level driver to address device and components of the system
 * Kernel can be regarded as an enhanced machine which abstracts the computer on a higher level
-* Acts as a resource manager; shares availables resources between various system process
+* Acts as a resource manager; shares available resources between various system processes
 * Ensures system integrity
 * Acts as a library which provides system-oriented commands known as system calls for sending request
   C standard library for the Linux Kernel.
@@ -170,12 +171,20 @@ Hardware -> Kernel -> User Process
 
 ## Hardware
 * The main memory:
-	Storage with 0s and 1s (bit) and all input and output pass through the main memory
-	Kernel and processes resides in it.
+	Storage area for bunch of 0s and 1s (bit) and all input and output pass through the main memory.
+	Running kernel and processes resides in it.
 * The CPU
-	Operates on memory; reads instruction(s) from and writes back to it.
+	Operates on memory; reads instruction(s) and data from and writes back to the main memory.
 
 ## Kernel
+Everything the kernel does revolves around the main memory. Splits the memory into many subdivisions,
+Maintains states information at all times and assigns each process a share of memory and restricts.
+
+Manages:
+- Processes: Determines which processes are allowed to use the CPU.
+- Memory: Keeps tracks of all memory; allocated, shared and free.
+- Device Drivers: An interface between hardware and processes.
+- System Calls and Support: Process use system calls to communicate with the kernel 
 
 ### Kernel Implementations Strategies
 * MicroKernels
@@ -231,46 +240,47 @@ Programs running on unix-like systems are referred to as processes.
 Each process is assigned address space in the virtual memory and are independent of other processes
 Special kernel mechanism is used to communicate between different processes
 
-Linux is a multitasking system that supports concurrent execution of several process
+Linux is a multitasking system that supports concurrent execution of several processes
 The kernel switch between processes at short interval that gives the impression of simultaneous processing
 
+Interrupt: The CPU interrupts current process based on internal timer and then switches into kernel mode.
+Context Switching: The act of giving up control of the CPU to another process.
+Time Slice: A time giving to a process to perform computation.
+Multitasking: An illusion of multiple processes running on a CPU at the same time.
 
+The kernel runs between process time slices and during context switch.
 
-## MISCELLANIA
-### Hardware
+### MEMORY MANAGEMENT
+The kernel has a complex memory management job. It must manage memory during context switch.
+* Kernel memory area inaccessible to user space process
+* Each user process needs its own section of memory
+* A user process may not access another user process memory section
+* Some memory in user processes can be read-only
+* The system can use more memory than is physically present
+	
+Modern CPUs include Memory Management Unit (MMU); enables virtual memory access.
+The MMU Initializes and maintains, translates and maps between virtual and physical memory.
+Memory Address map is known as the page table.
 
-
-* Process Management:
-	Interrupt; Context Switch; Time Slice; Multitasking;
-	The kernel runs between process time slices during context switch.
-
-* Memory Management: 
-	- Kernel memory area inaccessible to user space process
-	- Each user process needs its own section of memory
-	- A user process may not access another user process memory section
-	- Some memory in user processes can be read-only
-	- The system can use more memory than is physically present
-	Modern CPUs include MMU; enables virtual memory access
-	MMU translates & maps virtual memory to physical memory
-	Initialize and maintains the map between virtual and physical memory.
-	Memory Address map is the page table.
-
-* Device Drivers and Management
-	- Device is typically accessible in kernel mode
-	- Improper access could crash the system
-	- Device drivers presents uniform interface for device access
+### Device Drivers and Management
+- Device is typically accessible in kernel mode
+- Improper access could crash the system
+- Device drivers presents uniform interface for device access
 
 ### System Calls (syscalls)
 The act of opening, reading and writing involves system calls
 _fork_ and _exec_ syscalls creates an identical copy of a process and the kernel starts the process to replace it.
+Syscalls is an interaction between a process and the kernel.
 	
 ### User space
 Process is simply a state or image in memory.
 
 ### Users
 An entity that runs processes and owns files; associated with username. 
-Kernel identifies users with numeric _userids_.
-Userspace processes haver user owner; user may terminate, modify the behavior of its own process.
+Kernel identifies users with numeric identifiers; _userids_.
+
+Users exist primary to support permissions and boundaries.
+Every users-pace process has a user owner; user may terminate, modify the behavior of its own process.
 A user may own files and may choose to share them with others or not.
 
 Linux is a multi-user system. The most important user is the _root_ or _superuser_ (Administrator).

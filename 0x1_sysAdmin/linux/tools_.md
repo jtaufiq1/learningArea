@@ -1,6 +1,6 @@
 # Tools
 
-## Bourne Again Shell (BASH)
+## Unix/Linux Shell
 
 * The Bourne Shell: /bin/sh
 ```sh
@@ -33,6 +33,18 @@ $ ls ?		# Prints all files/directories with a single name
 # Or escape it with backslash (\)
 ```
 
+* The Bourne-Again Shell: /bin/bash
+```sh
+
+```
+
+* Shell Builtins
+```sh
+# builtin
+# pwd
+# cd
+```
+
 * Shortcuts
 cntrl + F 	- Move the cursor position one character forward
 cntrl + B 	- Move the cursor position one character backward ()
@@ -51,12 +63,7 @@ cntrl + Y 	- Paste erased text (from ^C + U, ^C + W, ^C + K)
 cntrl + L 	- Clear terminal window
 cntrl + R 	- Reverse history search
 
-cntrl + xe  - Invoke $EDITOR to edit command at shell prompt
-
-* Shell Builtins
-```sh
-
-```
+cntrl + XE  - Invoke $EDITOR to edit command at shell prompt
 
 ## READING DOCUMENTATION
 
@@ -126,7 +133,6 @@ $ grep -o 								# Print only matching line(s) with each on separate line.
 # Extended grep: Understands pattern(s) in regular expressions
 $ grep -E "regularExpression"			# egrep "regular_expression"
 ```
-
 * cut
 
 * diff
@@ -137,8 +143,25 @@ $ diff [Args] file1 file2				# Simple form
 ```
 
 * vimdiff
+```sh
+# 
+```
+
+* Misc commands
+```sh
+$ truncate -s [SIZE] [FILE]
+$ column
+```
 
 * vi|vim
+```sh
+$ vim [FILE_NAME]		# Starts vim with optional file name
+						# In vim
+						# ESC:q quits vim
+						# ESC:q! force quits vim
+						# ESC:w [file] saves to file
+						# ESC:wq [file] saves and quit vim
+```
 
 ## FIND AND SEARCHING FILES
 
@@ -155,15 +178,17 @@ $ find
 * Process Management: Process is a running program. Each process has Process ID (PID).
 ```sh
 # Listing Process
-$ ps 					# Quick list (snapshot) of running process for current $USER
+$ ps 					# Quick list (snapshot) of running process for current $USER on $TTY
 #
 ## BSD OPTIONS
 # Must NOT be preceeded by dash and can be grouped together
 $ ps x 					# Show all your running process
 $ ps ux 				# same as above but include username field
+$ ps uxw 				# Show user processes with detailed command
 
 $ ps ax 				# Show all process running on the system
 $ ps axu
+$ ps auxw 				# Detailed command process view with username field
 # 
 ## UNIX OPTIONS
 # Must preceeded by single dash (-) and can be grouped

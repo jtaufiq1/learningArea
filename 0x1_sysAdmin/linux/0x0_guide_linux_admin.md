@@ -1,7 +1,7 @@
 # LINUX SYSTEMS ADMINISTRATION GUIDE - CHECKLIST
 
-`The power of a system comes from the relationship among programs than from the programs themselves.` <br/>
-_Eric S. Raymond, Unix Programming Environment_
+`The power of a system comes from the relationship among programs than from the programs themselves.`
+<br/>_Eric S. Raymond, Unix Programming Environment_
 
 ## Fundamentals: www.Linuxjourney.com
 * [x] History Unix/Linux & GNU Project
@@ -54,18 +54,19 @@ _Eric S. Raymond, Unix Programming Environment_
 ## DevOps Checklists
 * [x] Finding & Reading Documentations
 * [x] Linux Fundamentals
-    - Shell & Variables
+    - The Command Shell
+    - Standard Input and Output (I/O Streams)
+    - I/O Redirections
+    - Shell & Environmental Variables
     - Command line navigation
     - Creating directories and files
-    - Copy|Move|Rename|Delete files/directories
+    - Managing files and directories
     - File Modes & Permissions
     - Searching files
     - Finding Help
 * [x] Text Manipulation
     - Basic Text tools (head, tail, cat, diff, tac, rev ...)
     - Pager (more, less)
-    - Input/Output Streams
-    - Input/Output Redirections
     - Text Editors (vim)
     - Advanced text tools (grep, sed, awk ...)
 * [ ] Process/Memory Management & Tools

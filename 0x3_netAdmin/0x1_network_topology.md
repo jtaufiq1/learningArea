@@ -11,11 +11,14 @@ This model consists of 3 layers: Core, Distribution and Access.
 - Consists of high-speed routers and Multi-layer switches.
 
 * Distribution
+- Separation layer between core and access layers
+- Defines local policies and local routing. Controls access  to resources at the core layer.
 - Routing, packet filtering using ACLs and Quality of Services (QoS)
-- WAN access is at this layer
-- Routers & layer 3 switches are used in this layer.
+- WAN access is at this layer. Routers are used in this layer.
 
 * Access
-- End devices connects to the network usually with switches or edge routers.
+- End devices connects to the network usually with switches, bridges, hubs.
+- End users data transmission access the network at the access layer.
+- Control client access to the network resources
 
 ## Network Topologies

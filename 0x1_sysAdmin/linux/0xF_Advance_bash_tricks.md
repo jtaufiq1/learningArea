@@ -36,10 +36,18 @@ $ popd -n N 		# Suppress normal behaviour: DO NOT change directory when popping 
 
 * History Control
 `HISTCONTROL=ignorespace` shell variable ignore commands that starts with space (Bash Incognito Mode).
+`HISTTIMEFORMAT=%Y-%m-%d %T `
 
 ## Reverse Search Mode
 `C-r` - Control R; search bash history 
 `C-g` - Exit Reverse search 
+
+## Clear Screen Buffer
+```sh
+# CTRL + L
+$ clear
+$ reset
+```
 
 ## Shredding File(s) & Directories
 

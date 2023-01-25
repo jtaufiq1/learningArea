@@ -112,6 +112,12 @@ Aliases are shortened cmdlet name
 `Get-Process procName1, procName2, ... | Format-List *` - 
 `Stop-Process -Name procName -Verbose`
 
+### Sample Powershell Commands in Real world
+```ps
+# List running process; Filter output remove duplicate names and Kill the process
+PS Prompt> get-process | select-object ProcessName -unique | where-object ProcessName -Like "*edge" | stop-process 
+
+```
 
 ### Formatting && Output
 `Get-ChildItem | Format-List *` Detailed list view

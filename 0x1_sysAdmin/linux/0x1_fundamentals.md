@@ -1,5 +1,7 @@
 # LINUX COMMANDLINE/TERMINAL BASICS
 - [x] The Command Shell
+- [x] Standard Streams & Input/Output Redirections
+- [x] Shell Globbing
 - [x] Shell & Environmental variables
 - [x] Navigating the filesystem
 - [x] Files & Directory commands
@@ -7,11 +9,78 @@
 - [x] Files & Directory Permissions
 - [x] Find & Search File(s) | Director(y|ies)
 - [x] Text tools & Text Editors
-- [x] Standard Streams & Input/Output Redirections
 - [x] Finding more informations
 - [ ] System information & Configuration
 
 ## The Command Shell
+The shell is a program that runs commands. Serves as a programming environment.
+Shell scripts are sequence of commands in a text file.
+
+Linux uses an advance version of the unix shell known as Bourne-Again Shell (bash). The default on most ditros.
+
+A shell window in a GUI environment is called a Terminal. 
+A shell has a prompt and usually ends with $ for the normal user and # for the root user.
+```sh
+	# E.g. of a shell prompt: user@hostname:path$
+	tgh@kali:~$ echo "Welcome to Linux Shell #USER"
+	tgh@kali:/$ echo "I am in the top-level of the directory (root-dir)"
+	thg@kali:/etc/$ cat passwd # Display the content of passwd to stdout
+```
+
+## Standard Input and Output Streams
+Unix/Linux processes uses I/O streams to read & write data
+Streams allows easy manipulation of input & output sources other than the default
+Process reads data from input stream and writes data to output stream.
+
+Sources of input stream can be a file, device, terminal or output from another process
+Errors during input/output redirections prints to the default output stream
+Standared Error (stderr) output can be redirected.
+
+ID Stream
+0 - stdin (Standard Input)
+1 - stdout (Standard Output)
+2 - stderr (Standard Error)
+```sh
+	# command > output 	- Output redirection
+	# command >> output - Append (Output redirection)
+	# command < input	- Input redirection
+	# command | command - Pipe: output of command becomes input of another command
+
+	## STDIN (<) - Default is keyboard
+	$ cat < path/to/file 
+	$ head < file_name
+	
+	## STDOUT (>, >>)
+	$ echo "Some text to stdout"		# Print argument(s) [text] to stdout
+	$ cat [file1] [file2]				# Print content of file(s) or stdin to stdout
+	# 
+	$ echo "Redirection" > out			# Output of echo is sent to out not the terminal
+	$ cat file1 file >> out 			# Append the output of cat to 'out' not the terminal
+	
+	## STDERR (2>)
+	$ ls not_existing 2>error_file 		# Error of ls command is sent to 'error_file'
+	$ ls -A not_existing > output 2>&1 	# Output and error message are sent to 'output'
+	
+	# Pipe (|)
+	$ cat /proc/cpuinfo | tr a-z A-Z 	# The output of cat becomes input to tr
+	#									  Transforms output of cat
+	$ head file | rev 					# Reverses the output of the head command
+	#
+	## Error Messages
+```
+
+## Shell Globbing
+Use to match simple file and directory names. The shell matches globs to filenames.
+Expansion: The shell substitutes the filenames for the _globs character_ and then run the revised command line.
+Single quote around glob in a command prevents expansion.
+```sh
+	$ echo * 						# Matches and expand any number of arbitrary characters
+									# echo: if no filename matches the glob, the shell performs no expansion
+	$ echo '*' 						# No Expansion: Literally sent to output. Same for '?'
+	$ ls * 							# Matches and expand all filenames
+	$ ls ? 							# Matches filename/directory with single character
+	$ echo ?r* 						# Matches any filename starting with a single char followed by r and any chars
+```
 
 ## Shell & Environmental Variables
 For keeping tracks of values in scripts
@@ -42,8 +111,8 @@ Environmental variables are accessible by all processes running in a shell.
 
 ## Navigating the filesystem
 
-* File system is a laid as a directory tree; with a single root (/). Every all other directories have parent directory.
-  Every file is also contained in a directory.
+* File system is a laid as a directory tree; with a single root (/).
+All other directories have parent directory and every file is also contained in a directory.
 
 ```sh
 	# tree [ARGS] [PATH]
@@ -62,6 +131,7 @@ Environmental variables are accessible by all processes running in a shell.
 * Show the current working directory
 ```sh
 	$ pwd 			# Shows your current working directory
+	$ pwd -P
 	$ echo $PWD 	# Print Working Directory (PWD) environmental variable points to the current working directory.
 ```
 
@@ -184,54 +254,13 @@ default. Given some options/arguments changes its behavior. Short options are us
 ```sh
 	$ # find [path] [options] target
 	$ # Supports more options to refine the search
-	$ find [PATH] -name text -print		# Find text starting from the current directory
-	$ find / -name file_name -type file_type [print0]
-```
-
-## Standard Streams (stdin|stdout|stderr)
-```sh
-	# Unix/Linux processes uses streams to read & write data
-	# Process reads data from input stream and writes data to output stream
-	# Sources of input stream can be a file, device, terminal or output from another process
-	# Streams allows easy manipulation of input & output sources other than the default.
-	# Errors during input/output redirections prints to the default output stream (terminal)
-	# Standared Error (stderr) output can be redirected.
-	#
-	## STREAM IDs
-	# 0 - stdin
-	# 1 - stdout
-	# 2 - stderr
-	#
-	# command > output 	- Output redirection
-	# command >> output - Append (Output redirection)
-	# command < input	- Input redirection
-	# command | command - Pipe: output of command becomes input of another command
-	#
-	## STDIN (<) - Default is keyboard
-	$ cat < path/to/file 
-	$ head < file_name
-	#
-	## STDOUT (>, >>) - Default is terminal
-	$ echo "Some text to stdout"		# Print argument(s) [text] to stdout
-	$ cat [file1] [file2]				# Print content of file(s) or stdin to stdout
-	# 
-	$ echo "Redirection" > out			# Output of echo is sent to out not the terminal
-	$ cat file1 file >> out 			# Append the output of cat to 'out' not the terminal
-	#
-	## STDERR (2>) - Default is terminal
-	$ ls not_existing 2>error_file 		# Error of ls command is sent to 'error_file'
-	$ ls -A not_existing > output 2>&1 	# Output and error message are sent to 'output'
-	#
-	# Pipe (|)
-	$ cat /proc/cpuinfo | tr a-z A-Z 	# The output of cat becomes input to tr
-	#									  Transforms output of cat
-	$ head file | rev 					# Reverses the output of head
-	#
-	## Error Messages
+	$ find [PATH] -name [file] -print		# Find text starting from the current directory
+	$ find / -name file_name -type file_type -print
 ```
 
 ## Text Tools & Text Editors
-* Text Manipulation Tools
+
+* Basic Text Manipulation Tools
 ```sh
 	$ cat [File 1] [File N]			# Print contents of files to STDOUT
 	$ cat -n [File] [File N]		# Number each line and print it out

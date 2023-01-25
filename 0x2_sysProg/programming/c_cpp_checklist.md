@@ -55,7 +55,7 @@ A general purpose programming language
 ## Coding Practice & SE
 - Algorithms and Data Structures
 - Network programming
-- Cryptographic Ciphers
+- Cryptographic Algorithms
 - Software Development with C/C++
 - Secure Coding & Best practices
 
