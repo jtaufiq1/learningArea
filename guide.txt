@@ -1,0 +1,80 @@
+TABLE VIEW ⎝⪩﹏⪨⎠
+
+As a nerd, walking down the ladder to linux sysAdmin, sys programmer, network troubleshooter & Computer security expert.
+
+Do
+    If(NOT_TIRED || NOT_SICK)
+        READ()
+        TAKE_NOTES()
+        PRACTICE()
+        PRACTICE_USE_CASES()
+        FIND_OBSCURE_PRACTICE()
+    Else
+        REST()
+        REVIVE(ENERGY)
+        REVIVE(MOTIVATION)
+While(ALIVE)
+
+0x0 - Nerd
+   |
+0x1 - Linux System Administration
+   |
+0x2 - Systems Programming
+   |
+0x3 - Network Fundamentals
+   |
+0x4 - Cyber Walking
+
+* 0x1 - 50%
+* 0x2 - 20%
+* 0x3 - 15%
+* 0x4 - 15%
+        
+Watch Videos to get the basics
+Read to expand and advance
+Practice to retain
+Experience reality
+Find obscure uses and adapt
+
+=================================================================================================
+    MORNING DOSE    |   MID-DAY DOSE    |   AFTERNOON DOSE  |   NIGHT DOSE  |   MID-NIGHT DOSE  |
+=================================================================================================
+| 1 |—> OS 1 —> Programming —> OS 2 —> Networking —> Security Principles —>|
+| 2 |—> Security Principles —> Networking —> OS 2 —> Programming —> OS 1 <—|
+| 3 |—> Programming —> OS 1 —> Security Principles —> Networking —> OS 2 —>|
+| 4 |—> OS 2 <— Networking <— Security Principles <— Programming <— OS 1 <—|
+| 5 |—> Networking —> Security Principles —> Programming —> OS 1 —> OS 2 —>|
+|--------------------------------------------------------------------------|
+| 1 |—> OS 1 —> Programming —> OS 2 —> Networking —> Security Principles —>|
+| 2 |-> Programming -> OS 2 -> Networking -> Security Principles -> OS 1 ->|
+| 3 |-> OS 2 -> Networking -> Security Principles -> OS 1 -> Programming ->|
+| 4 |-> Networking -> Security Principles -> OS 1 -> Programming -> OS 2 ->|
+| 5 |-> Security Principles -> OS 1 -> Programming -> OS 2 -> Networking ->|
+|--------------------------------------------------------------------------|
+|x0| |x4| |x3| |x2| |x1|
+|x1| |x0| |x4| |x3| |x2|
+|x2| |x1| |x0| |x4| |x3|
+|x3| |x2| |x1| |x0| |x4|
+|x4| |x3| |x2| |x1| |x0|
+=================================================================================================
+
+* Operating Systems:
+    * Linux Cli & Scripting: See Guide - Linux Sys Administration
+    * Windows Cli & Scripting
+* Programming: Night Dose, Morning Dose
+    * C/CXX
+    * Assembly
+    * Python
+    * .NET Platform
+* Networking:
+    * Networking: Top Down Approach
+    * The Internet & Protocols
+    * Cloud Computing
+    * Data Communication
+    * Network Security
+    * Network Programming
+* Security Principles:
+    * Computer Security
+    * Malwares
+    * Security Assessment
+    * Forensics

@@ -1,0 +1,24 @@
+--[ Operating Systems
+
+# Unix/Linux - User-space Basics
+* The Bourne Shell: /bin/sh
+* Manage Users
+* Manage Groups
+
+--[ Software Engineer 
+
+* Software Architect: Analyses & Design
+ - Requirement Analyses
+ - Quality Requirement
+ - Use Cases
+ - Agile Development
+ - Modeling Technique (OOP-AD & MDA)
+ - Unified Modeling Language (UML)
+ - Database & Entity Relationship (ER Modeling)
+ - Language Implementation (Imperative/Procedural/Functional/Logic)
+ - Algorithmic Complexity (Big-O notation)
+ - Debugging
+
+* Programming
+
+* Programmer/Developer
