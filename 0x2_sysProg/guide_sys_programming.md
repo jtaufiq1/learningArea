@@ -4,15 +4,15 @@
 * Programming Principles
 * Object Oriented Programming Principles
 * DevOps
-* Secure Coding
+* Secure Programming (Coding)
 * Low Level Programming (Assembly Programming)
 
-## Programming Languages
+## Computer Programming & Languages
 * C/CXX Programming
 * Python
 * .NET Platform
 
-## Software Development
+## Software Engineering
 
 ## DevOps
 
